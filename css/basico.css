@@ -1,0 +1,176 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    letter-spacing: 0.03em;
+    line-height: 1.3;
+}
+
+  body {
+    background: radial-gradient(100% 90% at 0px 0px, rgba(163, 157, 147, 0.2), transparent 100%);
+  }
+
+header{
+    background:#555050;
+    color:#f2f2f2;
+    padding: 1rem 0;
+    position: fixed;
+    left: 0;
+    top:0;
+    right: 0;
+    height: 65px;
+}
+  #shop-menu
+{ 
+	position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: white;
+    margin: auto;
+    text-align: center;
+    width: 100%;
+  
+    padding: 15px 40px;
+    box-sizing: border-box;
+    position: relative;
+    box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.302), 0 2px 6px 2px rgba(60, 64, 67, 0.149); 
+}
+  #shopName 
+  {
+      font-size: 30px; 
+      font-family: 'Lato', sans-serif;
+      
+  }
+  #shopName a
+  {
+      text-decoration: none;
+      color: rgb(156, 9, 9);
+  }
+
+  #sections
+  {
+      font-weight: bold;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+  }
+  #sections a
+  {
+      text-decoration: none;
+      color: rgb(29, 29, 29);
+  }
+
+  .search
+{
+    padding: 14px;
+    /* color: gray; */
+    color: rgb(34, 4, 116);
+    min-width: 25px;
+    text-align: center;
+    position: absolute;
+}
+
+/* Estilo del input para el buscador del nav-var */
+#input 
+{
+    width: 35em;
+    height: 3em;
+    padding: 2px 50px;
+    background-color: rgb(241, 241, 241);
+    border: none;
+    border-radius: 5px;
+}
+/* Tipo de fuente mientras se espera que se ingrese texto */
+#input::placeholder
+{
+    font-weight: bold;
+}
+
+/* Posicionamiento, color y tamaño de los iconos (carrito y usuario) */
+
+#user
+{
+    display: flex;
+    /* float: right; */
+    align-items: center;
+}
+.userIcon
+{
+    font-size: 35px;
+}
+.addedToCart
+{
+    font-size: 25px;
+    margin-right: 35px;
+}
+#user a
+{
+    color: rgb(30, 2, 68)
+}
+
+
+/* Imagenes en circulos */
+.container-imagen{
+    /* Posicionamiento */
+    width: 33%;
+    display:inline-block; 
+    align-items: center;
+    flex-direction: column;
+    text-align:center;
+    padding: 20px;
+}
+   /* Formato Circulo */
+.circulo{    
+    width: 60%;
+    border-radius: 50%;
+    border:2px solid  #DF691A;
+    box-shadow: 0 2px 2px rgba(0,0,0,0.2);
+}
+/* Botonoes */
+.ver-todo{
+    margin: 50px 0;
+    width: 100%;
+    text-align: center;
+}
+.button{
+    background:#DF691A;
+    text-decoration: none;
+    padding: 15px;
+    margin-top: 15px;
+    border-radius: 5px;
+    color:  #f2f2f2;
+    font-weight: 700;
+}
+.button:hover{
+    cursor: pointer;
+    text-decoration: none;
+    background-color: #9a4912;
+    color: #f2f2f2;
+}
+
+
+.contenedor-columna{
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+}
+/*columnas*/
+.columna1{
+    width: 50%;
+    /* float: left;
+    padding-left: 25px; */
+    text-align: center;
+}
+.columna2{
+    /* width: 40%;
+    float: right; */
+}
+.columna2 img{
+    width: 450px;
+}
